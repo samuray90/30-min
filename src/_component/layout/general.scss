@@ -1,12 +1,14 @@
+@import "../font/variables";
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-// body {
-
-// }
+body {
+  font-family: "#{$icomoon-font-family}";
+}
 // .content {
 
 // }
