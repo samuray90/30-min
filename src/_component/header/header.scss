@@ -1,0 +1,22 @@
+.page-header {
+  background-image: url(asset/image/page-header.jpg);
+  padding-top: 56.22%;
+  background-size: cover;
+  grid-column: 1/-1;
+
+  color: #fff;
+  font-size: 36px;
+  position: relative;
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+  }
+}
