@@ -1,0 +1,24 @@
+-
+  var { filter, card } = data.article
+
+.article-panel__filter
+  each item in filter 
+    button(
+      class=`article-panel__button--${item.status}`
+    )= item.label
+
+each item in card
+  .article-panel__card
+    if item.thumbnail
+      div(
+        style=`background-image: url(${item.thumbnail})`
+        class=`article-panel__thumbnail`
+      )
+    else
+      div
+    .article-panel__content
+      h2.article-panel__title= item.title
+      p.article-panel__description= item.description
+    a.article-panel__label
+      span.article-panel__text= item.label
+      .min-arrow

@@ -1,9 +1,9 @@
 .latest-news {
   grid-column: 1/-1;
-}
 
-.latest-news__description {
-  text-align: justify;
+  &__description {
+    text-align: justify;
+  }
 }
 
 // Desktop
