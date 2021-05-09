@@ -69,6 +69,20 @@
     @extend %article-panel__button;
 
     background-color: #000;
-    color: #fff;
+    color: $color-white;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .article-panel {
+    &__card {
+      grid-column: span 4;
+      background-color: $color-card-dark;
+    }
+
+    &__title {
+      background-color: $color-card-dark;
+      color: $color-white;
+    }
   }
 }

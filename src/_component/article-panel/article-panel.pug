@@ -11,7 +11,7 @@ each item in card
   .article-panel__card
     if item.thumbnail
       div(
-        style=`background-image: url(${item.thumbnail})`
+        style=`background-image: url(${baseUrl}${item.thumbnail})`
         class=`article-panel__thumbnail`
       )
     else
