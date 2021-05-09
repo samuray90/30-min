@@ -1,0 +1,8 @@
+-
+  const { title, info } = data['latest-news']
+
+.latest-news
+  h1.latest-news__title= title
+  .latest-news__info
+    each description in info 
+      p.latest-news__description= description
